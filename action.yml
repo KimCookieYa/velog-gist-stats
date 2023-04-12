@@ -6,4 +6,4 @@ branding:
   color: "blue"
 runs:
   using: "node16"
-  main: "dist/index.js"
+  main: "./api/index.js"
