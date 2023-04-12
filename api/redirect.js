@@ -1,4 +1,4 @@
-import fetchPost from "../src/fetchers/post-fetcher";
+import fetchPost from "../src/fetchers/post-fetcher.js";
 
 module.exports = async (req, res) => {
   const { name, tag } = req.query;

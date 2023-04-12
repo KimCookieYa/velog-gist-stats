@@ -1,8 +1,8 @@
-import createCard from "../src/cards/new-log";
-import createCardDark from "../src/cards/new-log-black";
-import fetchPost from "../src/fetchers/post-fetcher";
-import fetchReadPost from "../src/fetchers/readpost-fetcher";
-import createGist from "./gist";
+import createCard from "../src/cards/new-log.js";
+import createCardDark from "../src/cards/new-log-black.js";
+import fetchPost from "../src/fetchers/post-fetcher.js";
+import fetchReadPost from "../src/fetchers/readpost-fetcher.js";
+import createGist from "./gist.js";
 
 module.exports = async (req, res) => {
   const { name, tag, color, slug } = req.query;

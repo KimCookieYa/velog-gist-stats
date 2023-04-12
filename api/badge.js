@@ -1,4 +1,4 @@
-import createBadge from "../src/cards/velog-badge";
+import createBadge from "../src/cards/velog-badge.js";
 
 module.exports = async (req, res) => {
   const { name } = req.query;
