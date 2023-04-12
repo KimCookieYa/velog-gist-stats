@@ -1,4 +1,4 @@
-import { Octokit } from '@octokit/rest';
+import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
 
 const createGist = async (lines) => {
     const octokit = new Octokit({ auth: `token ${process.env.GH_TOKEN}` });

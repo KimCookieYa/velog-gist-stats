@@ -23,7 +23,6 @@ jobs:
       - name: build
         run: |
           yarn install
-          yarn add @octokit/rest
       - name: repository dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
