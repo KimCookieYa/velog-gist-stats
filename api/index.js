@@ -2,6 +2,7 @@ const createCard = require("../src/cards/new-log");
 const createCardDark = require("../src/cards/new-log-black");
 const fetchPost = require("../src/fetchers/post-fetcher");
 const fetchReadPost = require("../src/fetchers/readpost-fetcher");
+const createGist = require("./gist");
 
 module.exports = async (req, res) => {
   const { name, tag, color, slug } = req.query;
@@ -10,7 +11,7 @@ module.exports = async (req, res) => {
     const post = !slug
       ? await fetchPost(name, tag)
       : await fetchReadPost(name, slug);
-    return res.send(color === "dark" ? createCardDark(post) : createCard(post));
+    return res.send(createGist(color === "dark" ? createCardDark(post) : createCard(post)));
   } catch (e) {
     return res.send(e.message);
   }

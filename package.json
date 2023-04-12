@@ -1,5 +1,5 @@
 {
-  "name": "velog-readme-stats",
+  "name": "velog-readme-stats-plus",
   "version": "1.0.0",
   "description": "당신의 Velog 상태를 깃허브에서 확인하세요.",
   "main": "./api/index.js",
