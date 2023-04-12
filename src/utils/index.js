@@ -1,4 +1,5 @@
-const axios = require("axios");
+import axios from 'axios';
+
 function request(data) {
   return axios({
     url: "https://v2.velog.io/graphql",
