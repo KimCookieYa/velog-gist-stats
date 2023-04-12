@@ -1,4 +1,4 @@
-const createBadge = require("../src/cards/velog-badge");
+import createBadge from "../src/cards/velog-badge";
 
 module.exports = async (req, res) => {
   const { name } = req.query;

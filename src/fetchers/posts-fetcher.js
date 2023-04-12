@@ -1,4 +1,4 @@
-const { request } = require("../utils");
+import { request } from "../utils";
 
 const fetcher = (variables) => {
   return request({

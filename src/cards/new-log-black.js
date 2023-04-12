@@ -1,4 +1,4 @@
-const { koCheck, replaceAll } = require("../utils");
+import { koCheck, replaceAll } from "../utils";
 
 const createCardTitle = (username, likes) => {
   const likeX = likes > 99 ? 365 : likes > 9 ? 370 : 380;
