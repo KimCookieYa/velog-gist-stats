@@ -7,7 +7,7 @@
     "start": "node ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "KimCookieYa",
   "license": "MIT",
   "dependencies": {
     "@octokit/rest": "^18.12.0",
